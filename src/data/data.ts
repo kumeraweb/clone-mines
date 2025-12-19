@@ -18,7 +18,7 @@ export const EXECUTIVES: Executive[] = [
     slug: 'ejecutiva',
     fullName: 'Ejecutiva Oficial',
     phone: '983589813',
-    email: 'ejecutiva@ucmchile.cl',
+    email: 'ezuniga@ucmchile.cl',
     cityPrimary: 'Santiago',
     cityCoverage: ['Santiago', 'Región Metropolitana', 'Valparaíso'],
     domain: 'https://www.planeatencionhogar.cl',
