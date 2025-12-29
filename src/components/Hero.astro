@@ -72,12 +72,28 @@ const { wa, call } = buildLinks(executive)
         <strong> {executive.fullName}</strong>, ejecutiva autorizada.
       </p>
 
-      <div class="text-sm text-white/90 space-y-1">
-        <p>
-          📞 <a href={call} class="underline underline-offset-2">{executive.phone}</a>
-        </p>
-        <p>
-          ✉️ <a href={`mailto:${executive.email}`} class="underline underline-offset-2">
+      <div class="space-y-3">
+        <p class="text-sm font-semibold tracking-wide text-white/80">Contacto telefónico directo</p>
+
+        <div
+          class="flex items-center gap-3 rounded-lg border border-red-400/70
+                 bg-white/95 px-4 py-3"
+        >
+          <span class="text-red-600 font-bold">📞</span>
+
+          <a
+            href={call}
+            data-cta="llamar"
+            class="text-red-600 font-semibold tracking-widest
+                   hover:text-red-700"
+          >
+            {executive.phone}
+          </a>
+        </div>
+
+        <p class="text-xs text-white/75">
+          También puedes escribir a
+          <a href={`mailto:${executive.email}`} class="underline underline-offset-2 ml-1">
             {executive.email}
           </a>
         </p>
